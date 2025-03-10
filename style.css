@@ -1,0 +1,200 @@
+body{
+    font-family: "42dot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  .project-name{
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+#a{
+  font-weight: 300;
+  line-height: 170%;
+  letter-spacing: 0.05em;
+}
+
+nav hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+.header{
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px 10px 0px
+}
+
+
+section1{
+  display: flex;
+  justify-content: space-between;
+  line-height: 300%;
+  letter-spacing: 0.02em;
+}
+
+nav{
+  display: flex;
+  margin: 30px 0px 0px 0px;
+  gap: 100;
+  font-weight: 500;
+}
+
+body{
+  font-weight: 300;
+  padding: 0px 200px 100px 200px
+}
+
+nav{
+  display: flex;
+}
+
+li{
+  display: inline;
+}
+
+hr{
+  color: black;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 300;
+}
+
+heo{
+  color: rgb(113, 127, 255);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h5{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h6{
+  color: rgb(164, 164, 164);
+  text-align: right;
+  line-height: 150%;
+}
+
+section1, div {
+  margin: 0;        
+  padding: 0;        
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(255, 255, 255); /* 세로선 색상과 두께 */
+  height: 70px;                /* 세로선의 길이 */
+  margin: 20px 0;               /* 위아래 여백 (선택 사항) */
+}
+
+head, body{
+  margin-left: 5%;    /* 양옆 마진을 5%로 설정 */
+  margin-right: 5%;   /* 필요에 따라 5% ~ 10%로 조정 가능 */
+}
+
+ /* 버튼 */
+ .btn-primary{
+
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+  height: 40px;
+  align-items: center;
+  display:flex;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 10px;
+  font-size: 20px;
+ }
+
+ .btn-primary:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 102, 255);
+ }
+
+ .d-primary{
+
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  align-items: center;
+  display:flex;
+  background-color:  rgb(85, 102, 255);
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 100px;
+ }
+
+ .d-primary:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 65, 193);
+ }
+
+.custom-img {
+  border-radius: 12px;     /* 모서리를 둥글게 */
+}
+
+
+
+
+
+
+
+
+ /* 스크롤을 감싸는 부모 컨테이너 */
+ .wrapper {
+  overflow-x: auto;                /* 가로 스크롤 활성화 */      
+  box-sizing: border-box;          /* 패딩 포함해 너비 조정 */
+}
+
+/* 스크롤 가능한 자식 컨테이너 */
+.scroll-container {
+  overflow-x: hidden;              /* 스크롤 충돌 방지 */
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;        /* IE 및 Edge에서 스크롤바 숨기기 */
+  scrollbar-width: none;           /* Firefox에서 스크롤바 숨기기 */
+  box-sizing: border-box;
+  direction: ltr;
+  position: relative;
+  padding-right: 20px;             /* 스크롤 오른쪽 끝 공간 확보 */
+}
+
+/* 스크롤바를 숨기기 위한 설정 (Chrome, Safari, Edge) */
+.scroll-container::-webkit-scrollbar {
+  display: none;                   /* 스크롤바 숨기기 */
+}
+
+/* 오른쪽 그라데이션 효과를 위한 가상 요소 */
+.scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;                    /* 그라데이션 영역의 너비 */
+  height: 100%;
+  background: linear-gradient(to left, rgb(0, 0, 0), transparent);
+  pointer-events: none;            /* 클릭 방해 안 하도록 */
+}
+
+/* 프로젝트 카드 배치 설정 */
+.project-container {
+  display: inline-flex;            /* 가로 배치 */
+  gap: 30px;                       /* 카드 간 간격 */
+}
+
+/* 이미지 모서리를 둥글게 처리 */
+.custom-img {
+  border-radius: 12px;             /* 모서리를 둥글게 */
+}
+          
